@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <style>
+    header{
+      box-shadow: 2px 2px 2px 2px grey;
+      margin: 0;
+      height: 50px;
+      position: sticky;
+      top: 0;
+      background-color:white;
+      z-index: 1000;
+    }
+ nav ul li a{
+  text-decoration: none;
+  color: black;
+ }
+ nav ul li {
+  display: block;
+   text-align: center;
+ }
+ nav ul{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+ text-align: center;
+margin: 0;
+font-size: 20px;
+letter-spacing: 3px;
+ }
+ nav ul :hover{
+border: solid black 1px;
+border-radius: 10px 10px 10px black;
+ }
+ nav p{
+  margin: 0;
+  letter-spacing: 8px;
+  font-size: 20px;
+ }
+ .a{
+  float: right;
+ }
+ #home p{
+  font-size: 80px;
+  letter-spacing: 7px;
+
+ }
+ #home b{
+  font-size: 80px;
+  letter-spacing: 9px;
+ }
+ .b{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+ }
+ .skill ul {
+  list-style-type: none;
+  text-align: center;
+ }
+ .skill{
+  background-color: rgb(94, 116, 116);
+  justify-content: center;
+  width: 300px;
+ }
+ .skil {
+  background-color:rgb(79, 120, 136);
+  justify-content: center;
+  width: 300px;
+  text-align: center;
+ }
+ .skil ul{
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+ }
+ .ski{
+  background-color:rgb(105, 34, 34);
+  justify-content: center;
+  width: 300px;
+  text-align: center;
+ }
+ .ski ul{
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+ }
+ .ab{
+  justify-content: center;
+  text-align: center;
+ }
+ .ab img{
+  border: solid black;
+  border-radius: 150px 150px 150px 150px;
+ }
+ .c{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+ }
+ .c :hover{
+  transform: scale(1.05);
+width: 310px;
+font-size: 18px;
+ }
+ #project:hover{
+   box-shadow:  2px 2px 2px 2px black;
+ }
+  
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Spreads the shadow */
+    cursor: pointer;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+span {
+    color: #666;
+    font-size: 2.5em;
+    margin-top: 5px;
+    font-weight: bold;
+}
+form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 25px;
+      }
+
+      .container.right {
+        left: 0;
+      }
+
+      .container.left::before, .container.right::before {
+        left: 15px;
+      }
+       .timeline {
+      position: relative;
+      margin: 20px auto;
+      padding: 20px 0;
+      width: 80%;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background: #3498db;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    .container {
+      padding: 20px;
+      position: relative;
+      background: inherit;
+      width: 50%;
+    }
+
+    .container.left {
+      left: 0;
+    }
+
+    .container.right {
+      left: 50%;
+    }
+
+    .content {
+      padding: 20px;
+      background: #fff;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #3498db;
+      border: 3px solid #fff;
+      z-index: 1;
+    }
+
+    .container.left::before {
+      right: -10px;
+    }
+
+    .container.right::before {
+      left: -10px;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-container h1 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-list li {
+      margin: 15px 0;
+    }
+
+    .contact-list a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #2c3e50;
+      padding: 10px 20px;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effects */
+    .contact-list a:hover {
+      background: #3498db;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    /* 📱 Responsive Design */
+
+/* Tablet screens (≤ 992px) */
+@media (max-width: 992px) {
+  nav ul {
+    gap: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  #home p, #home b {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .c {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container {
+    width: 100%;
+    left: 0 !important; /* timeline containers stack */
+    padding: 10px;
+  }
+
+  .timeline::after {
+    left: 20px; /* move center line to left */
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 10px;
+  }
+
+  .content {
+    margin-left: 40px;
+  }
+}
+
+/* Mobile screens (≤ 600px) */
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  nav ul li {
+    text-align: left;
+  }
+
+  #home p, #home b {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .c {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill, .skil, .ski {
+    width: 90%;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-list a {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .form-container {
+    width: 95%;
+    padding: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <p style="float: left;">UPPALA ASHRITH</p>
+        <a href="#enquriy" style="float: right; letter-spacing: 1px; border: solid #000; border-radius: 20px 20px  20px 20px;background-color: #000;color: white;text-decoration: none; margin: 10px;">For an enquriy</a>
+      <ul class="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutt">About</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="superset_file_1758209099773.pdf">RESUME</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" >
+    <hr>
+  <div style="float: right; margin:18px;" class="a">
+  <img src="pic.jpeg" width="480px" height="700px">
+  </div>
+  
+  <p>Hello,Welcome</p>
+  <b>I AM</b><br><b>UPPALA ASHRITH</b>
+  <p style="font-size: 54px;">-Web Designer And Web Developer</p>
+ <hr>
+  </section>
+  <section id="project">
+  <h1 style="text-align: center;">PROJECTS</h1><br>
+  <h2 style="text-align: center;">Smart Irrigation using Arduino</h2>
+  <div class="b">
+  <div class="project">
+   
+      <img src="pexels-suleyman-sahan-1365370-2684805.jpg" width="420px" height="270px">
+      <p>The **Smart Irrigation System using Arduino** is an automated solution designed to improve water efficiency in agriculture and gardening. It uses soil moisture sensors to monitor the water content in the soil and automatically operates a water pump or valve when the moisture level falls below a predefined threshold. This ensures that plants receive the right amount of water at the right time, reducing both water wastage and manual effort. The system can be enhanced with additional sensors such as temperature, humidity, or rain detectors for more accurate control, and can also be integrated with GSM, Wi-Fi, or Bluetooth modules for remote monitoring and control. Being low-cost, energy-efficient, and sustainable, this project is highly suitable for small-scale farmers, greenhouses, and home gardens, ultimately promoting smart agriculture and better resource management.
+</p>
+  </div>
+  <h2 style="text-align: center;">Website portfolio</h2>
+  <div class="project">
+   
+      <img src="pexels-arshutter-31449926.jpg" width="420px" height="250px">
+      <p>I designed and developed a responsive portfolio website to showcase my skills, projects, and achievements. The site features a clean and modern layout with intuitive navigation, ensuring a smooth user experience across devices. It highlights key sections such as About Me, Skills, Projects, Resume, and Contact. The website was built using HTML, CSS, and JavaScript (or other tools/frameworks you used, like React, Bootstrap, or Tailwind).
+To enhance functionality, I integrated interactive elements such as project previews, smooth scrolling, and a contact form. The site is optimized for performance, accessibility, and SEO to ensure better reach. Hosting and deployment were managed using platforms like GitHub Pages / Netlify / Vercel for easy updates and scalability.
+This project demonstrates my ability to combine design sense, coding skills, and problem-solving to create a professional online presence.</p>
+  </div>
+  </div>
+  <hr>
+  </section>
+
+  <section id="aboutt">
+    <h1 style="text-align: center;">ABOUT ME</h1>
+    <div class="ab">
+      <img src="pic.jpeg" width="300px" height="300px">
+      <p>I am a passionate and detail-oriented Web Developer with expertise in creating responsive, user-friendly, and visually engaging websites. Skilled in HTML, CSS, JavaScript, and modern frameworks such as React, Bootstrap, and Tailwind CSS, I specialize in building clean, efficient, and mobile-friendly designs that deliver seamless user experiences. Alongside frontend development, I also have knowledge of backend technologies like Node.js, Express, and databases including MySQL and MongoDB, which allows me to handle the full development lifecycle from design to deployment.
+
+I am proficient in using Git/GitHub for version control and have experience deploying projects on platforms such as Netlify, Vercel, and GitHub Pages. My strengths include optimizing websites for SEO, performance, and accessibility, ensuring that projects are not only functional but also scalable and impactful. With a strong problem-solving mindset and a commitment to continuous learning, I stay updated with the latest web technologies and best practices. My goal is to deliver secure, high-quality digital solutions that help businesses and individuals strengthen their online presence.</p>
+    </div>
+   <u><h2 style="text-align: center;">Skills</h2></u>
+    <div class="c">
+    <div class="skill">
+    <ul>
+      <u><li><b>FRONT-END</b></li></u>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVA SCRIPT</li>
+      <LI>CSS TAILWIND</LI>
+      <LI>BOOTSTRAP</LI>
+    </ul>
+</div>
+<div class="skil">
+<ul>
+      <u><li><b>BACK-END</b></li></u>
+      <li>JAVA</li>
+      <li>ADVANCE JAVA</li>
+      <li>REACT-JS</li>
+      <LI>SPRING BOOT</LI>
+    </ul>
+</div>
+<div class="ski">
+  <ul>
+      <u><li><b>DATA-BASE</b></li></u>
+      <li>SQL</li>
+      <li>JAVA-DBSC</li>
+      <li>POWER BI</li>
+      <LI>MONGO DB</LI>
+    </ul>
+</div>
+</div>
+<h1 style="text-align:center; color:#2c3e50;">My Education Timeline</h1>
+
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>SSC</h2>
+        <p>Genius Grammer School (2010-2020)<br>
+          Cgpa-9.8
+           </p>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <h2>Diploma</h2>
+        <p>Government of Institute of Electronics (2020 - 2023)<br>
+          Graduated with a Diploma degree in Electronics and communication Engineering<br>
+        CGPA-9.5</p>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <h2>Bachelor of Engineering</h2>
+        <p>Sreenidhi Institute of Science and Technology (2023 - 2026)<br>
+           Studying B.tech-ECE </p>
+      </div>
+    </div>
+  </div>
+  </section><br>
+  <section id="contact">
+<div class="contact-container">
+    <h1>Contact Me</h1>
+    <ul class="contact-list">
+      <li><a href="mailto:youremail@example.com">📧 Email:Ashrithuppala80@gmail.com</a></li>
+      <li><a href="tel:+911234567890">📞 Phone: +91 8519861474</a></li>
+      <li><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">💼 LinkedIn</a></li>
+      <li><a href="https://github.com/yourgithub" target="_blank">🐙 GitHub</a></li>
+    </ul>
+  </div>
+  </section><br>
+  <section id="enquriy"><center>
+  <div class="form-container">
+    <h1>Enquiry</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+    </form>
+</div></center>
+  </section></body>
+</html>
